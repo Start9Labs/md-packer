@@ -1,0 +1,20 @@
+[package]
+name = "md-packer"
+version = "0.1.0"
+authors = ["Aiden McClelland <aiden@start9labs.com>"]
+edition = "2018"
+license = "MIT"
+readme = "README.md"
+description = "Packs all external images referenced by an MD file as base64 urls"
+keywords = ["markdown", "cli"]
+documentation = "https://docs.rs/md-packer"
+repository = "https://github.com/Start9Labs/md-packer"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.34"
+base64 = "0.13.0"
+bytes = "0.5.6"
+reqwest = { version = "0.10.8", features = ["blocking"] }
+regex = "1.4.2"
