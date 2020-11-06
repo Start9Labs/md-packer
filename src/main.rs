@@ -77,7 +77,7 @@ fn replacer(pwd: &Path, caps: &regex::Captures) -> Result<String, Error> {
         content_type,
         base64::display::Base64Display::with_config(
             &data,
-            base64::Config::new(base64::CharacterSet::UrlSafe, true)
+            base64::Config::new(base64::CharacterSet::Standard, true)
         )
     ))
 }
